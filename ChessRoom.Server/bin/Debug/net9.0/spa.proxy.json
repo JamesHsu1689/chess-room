@@ -1,0 +1,10 @@
+{
+"SpaProxyServer": {
+"ServerUrl": "https://localhost:60201",
+"RedirectUrl": "",
+"LaunchCommand": "npm run dev",
+"WorkingDirectory": "D:\\Software Projects\\Personal .NET Projects\\ChessRoom\\ChessRoom.Server\\..\\chessroom.client",
+"MaxTimeoutInSeconds": "120",
+"KeepRunning": "false"
+}
+}

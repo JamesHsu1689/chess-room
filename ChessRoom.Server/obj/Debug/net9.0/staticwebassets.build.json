@@ -1,0 +1,24 @@
+{
+  "Version": 1,
+  "Hash": "S4R+FigV2pLA963P+dATGceQupeT8+Li0Snz//LHknA=",
+  "Source": "ChessRoom.Server",
+  "BasePath": "_content/ChessRoom.Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "D:\\Software Projects\\Personal .NET Projects\\ChessRoom\\chessroom.client\\chessroom.client.esproj",
+      "Version": 2,
+      "Source": "chessroom.client",
+      "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+
+    <!-- keep SpaRoot as a PROPERTY (use $(SpaRoot)) -->
+    <SpaRoot>..\chessroom.client</SpaRoot>
+
+    <!-- dev-time proxy (dotnet watch) -->
+    <SpaProxyLaunchCommand>npm run dev</SpaProxyLaunchCommand>
+    <SpaProxyServerUrl>https://localhost:60201</SpaProxyServerUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.4" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.SpaProxy">
+      <Version>9.*-*</Version>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\chessroom.client\chessroom.client.esproj">
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+
+  <!-- Build the Vite client whenever the server builds -->
+  <Target Name="BuildClient" BeforeTargets="Build;Publish">
+    <Message Importance="High" Text="Building client app in '$(SpaRoot)'" />
+    <!-- npm ci is idempotent and ensures a clean, locked install -->
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm ci" />
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm run build" />
+  </Target>
+
+  <!-- Link the built files into wwwroot for output & publish -->
+  <ItemGroup>
+    <!-- Use backslashes for MSBuild paths; SpaRoot has no trailing slash -->
+    <Content Include="$(SpaRoot)\dist\**\*">
+      <!-- Place under wwwroot\<dist structure> -->
+      <Link>wwwroot\%(RecursiveDir)%(Filename)%(Extension)</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

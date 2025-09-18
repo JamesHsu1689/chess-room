@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "chessroom.client", "chessroom.client\chessroom.client.esproj", "{328EFEA9-ED00-2614-C1A6-158177ADC158}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChessRoom.Server", "ChessRoom.Server\ChessRoom.Server.csproj", "{19F921BA-0805-474F-B29D-AC2C1D939090}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{328EFEA9-ED00-2614-C1A6-158177ADC158}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{328EFEA9-ED00-2614-C1A6-158177ADC158}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{328EFEA9-ED00-2614-C1A6-158177ADC158}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{328EFEA9-ED00-2614-C1A6-158177ADC158}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{328EFEA9-ED00-2614-C1A6-158177ADC158}.Release|Any CPU.Build.0 = Release|Any CPU
+		{328EFEA9-ED00-2614-C1A6-158177ADC158}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{19F921BA-0805-474F-B29D-AC2C1D939090}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19F921BA-0805-474F-B29D-AC2C1D939090}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19F921BA-0805-474F-B29D-AC2C1D939090}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19F921BA-0805-474F-B29D-AC2C1D939090}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2BBF8498-6AAF-4391-819F-8B3B9BE4474A}
+	EndGlobalSection
+EndGlobal

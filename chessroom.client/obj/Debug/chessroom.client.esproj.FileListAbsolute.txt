@@ -1,0 +1,1 @@
+D:\Software Projects\Personal .NET Projects\ChessRoom\chessroom.client\obj\Debug\chessroom.client.esproj.CoreCompileInputs.cache
